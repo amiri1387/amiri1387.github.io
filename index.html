@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>My first website</title>
   </head>
   <body>
@@ -11,6 +11,23 @@
       <h1>Blog</h1>
       <button type="button" id="log-in-btn">log in</button>
     </header>
-    <main></main>
+    <main id="container"></main>
+    <div id="log-in-box">
+      <button id="close-btn">close</button>
+      <div class="card">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" />
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="text" id="password" />
+        </div>
+
+        <button type="button" id="submit-btn">Submit</button>
+      </div>
+    </div>
   </body>
+  <script type="module" src="./scripts/index.js"></script>
 </html>
